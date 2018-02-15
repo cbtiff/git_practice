@@ -3,4 +3,7 @@ module Git
   def self.puts_git(cmd)
   puts `git #{cmd} -h`
   end
+  def self.config
+    `git config -l`
+  end 
 end
