@@ -1,9 +1,11 @@
 module Git
   # allows command line process in terminal for git
-  def self.puts_git(cmd)
+  def self.git_cmd(cmd)
   puts `git #{cmd} -h`
   end
+
+  #Config file will be shown.
   def self.config
-    `git config -l`
-  end 
+    puts `git config -l`
+  end
 end
